@@ -1,157 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="یادداشت‌های صانع — آیا نوازندهٔ ساز بومی منطقه‌ای می‌تواند آهنگسازی کند؟">
-<title>آیا نوازندهٔ ساز بومی منطقه‌ای می‌تواند آهنگسازی کند؟ | یادداشت‌های صانع</title>
+<title>آیا نوازندهٔ ساز بومی منطقه‌ای می‌تواند آهنگسازی کند؟ — HORMOZ SANE</title>
+<meta name="description" content="یادداشتی از هرمز صانع دربارهٔ آهنگسازی با سازهای سنتی و منطقه‌ای.">
+<link rel="canonical" href="https://hormozsane.github.io/articles/episode-3.html">
 <style>
-:root {
-  --bg: #173b32;
-  --panel: #173b32;
-  --text: #f3ead7;
-  --muted: #f3ead7;
-  --mustard: #d2ae49;
-  --line: #d2ae49;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: Tahoma, Arial, sans-serif;
-  line-height: 2.15;
-}
-main {
-  width: min(900px, calc(100% - 32px));
-  margin: 28px auto 56px;
-  padding: clamp(24px, 5vw, 52px);
-  background: var(--panel);
-  border: 1px solid var(--line);
-}
-.lang-switch {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 0 0 24px;
-}
-.lang-switch button {
-  appearance: none;
-  -webkit-appearance: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 84px;
-  min-height: 40px;
-  margin: 0;
-  padding: 7px 16px;
-  border: 1px solid var(--mustard);
-  border-radius: 5px;
-  background: transparent;
-  color: var(--text);
-  font-family: Tahoma, Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.4;
-  white-space: nowrap;
-  cursor: pointer;
-}
-.lang-switch button:hover,
-.lang-switch button:focus-visible {
-  outline: none;
-  border-color: var(--mustard);
-  box-shadow: 0 0 0 2px rgba(210, 174, 73, .22);
-}
-.lang-switch button.active {
-  background: var(--mustard);
-  color: var(--bg);
-  border-color: var(--mustard);
-}
-.kicker {
-  margin: 0 0 12px;
-  color: var(--mustard);
-  font-size: 15px;
-}
-h1 {
-  text-align: center;
-  margin: 0 0 26px;
-  color: var(--mustard);
-  font-family: "B Nazanin", "IranNastaliq", Tahoma, serif;
-  font-size: clamp(27px, 4vw, 40px);
-  font-weight: 500;
-  line-height: 1.8;
-}
-.article-text {
-  margin: 0;
-  color: var(--text);
-  font-size: clamp(16px, 2vw, 19px);
-  line-height: 2.15;
-  white-space: pre-line;
-}
-footer {
-  margin-top: 38px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-}
-.back {
-  color: var(--mustard);
-  text-decoration: none;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 4px;
-}
-.back:hover { color: var(--text); }
-@media (max-width: 520px) {
-  main { width: calc(100% - 20px); margin-top: 12px; padding: 22px 18px; }
-}
+*{box-sizing:border-box}
+body{margin:0;background:#173b32;color:#f3ead7;font-family:Tahoma,Arial,sans-serif}
+.top{display:flex;justify-content:flex-end;align-items:center;padding:18px 6vw;border-bottom:1px solid #d2ae4955}
+.languages{display:flex;gap:12px;align-items:center;font-size:14px}
+.languages button{background:transparent;border:0;color:#f3ead7;cursor:pointer;font:inherit}
+main{max-width:900px;margin:0 auto;padding:7vh 28px 12vh}
+h1{font-size:32px;line-height:1.8;font-weight:400;text-align:center;margin:0 0 10px;color:#f3ead7}
+.mark{width:180px;height:2px;margin:10px auto 34px;background:linear-gradient(to right,#d2ae49,rgba(210,174,73,.2),transparent)}
+.articleBody{max-width:850px;margin:0 auto;line-height:2.15;font-size:18px}
+.articleBody p{margin:0 0 20px}
+.back{display:inline-block;margin-top:36px;color:#d2ae49;text-decoration:none}
+.back:hover{color:#f3ead7}
+footer{text-align:center;padding:18px;font:13px Georgia,serif;color:#eadcc3;border-top:1px solid #ffffff22}
+@media(max-width:600px){main{padding:5vh 20px 10vh}h1{font-size:27px}.articleBody{font-size:16px}}
 </style>
 </head>
 <body>
+<header class="top">
+<div class="languages">
+<button onclick="setLang('fa')">فارسی</button><span>·</span><button onclick="setLang('en')">English</button>
+</div>
+</header>
 <main>
-  <div class="lang-switch" aria-label="Language selection">
-    <button type="button" id="faBtn" class="active" onclick="setLang('fa')">فارسی</button>
-    <button type="button" id="enBtn" onclick="setLang('en')">English</button>
-  </div>
-  <p class="kicker" id="kicker">یادداشت‌های صانع</p>
-  <h1 id="title">آیا نوازندهٔ ساز بومی منطقه‌ای می‌تواند آهنگسازی کند؟</h1>
-  <article class="article-text" id="article">چندین سال پیش برام سوالی پیش آمده بود:اگر کسی سازی غیر کلاسیک مثل پیانو یا ویولن و...بنوازد آیا میتونه آهنگساز بشه اتفاقا به صورت خیلی روشن در سالن اجرای تمرین در فرهنگسرایی جواب درست رو فهمیدم جالب بود خود کارم و سازم و راهم جواب را در جایی حین تمرین نشونم داد و از همه جالبتر شخصی در خارج از ایران همین شدنی بودن رو ازم پرسید و من هم جوابشو به صورت اجرایی در همان شب پاسخ دادم که با چشمانی مرطوب پیش من آمد و گفت متوجه شدم و الان این مورد را با تو عزیز به اشتراک میگذارم....اگر نوازنده ساز ملودیک هستی بله و زیبایی موضوع به حدی هست که هر ساز ملودیک نه کوبه ای نفس و حالت بیان خودش و داره و شما به عنوان نوازنده هم باید تمام ابعاد و زوایا و خصوصیات جنس و حس سازتون رو بشناسید و بعد در مسیر اهنگسازی و خلق کار جدید یا بازسازی کار قدیمی توانایی خودتون رو نشون دهید ...نکته خیلی مهم برای نوازندگان و حتی توصیه به آنها دارم که اگر میخواهید اثری بیافرینید لطفا دایره دانش و شناخت موسیقی خودتون رو کمی بالاتر ببرید ودرکنار ساز کوبه ای حتما یک ساز ملودیک که قلبا دوستش دارید انتخاب کنید و مسیر رو هموارتر کنید...اشاره داشتم به سازهای منطقه یعنی سازهای کلاسیک شهری منطقه خاص مثلا عراق:عود منحصر بفردی دارد با ابعاد بزرگتر و شیوه نوازندگی خاص یا دورتر نرویم سازهای ایران:تار و سه تار .کمانچه . نی .سنتورو...و حتی سازی که از 60 سال پیش فرم شهری به خودش گرفته و با افتخار اسمش و اضافه میکنم بنام قیچک ولی به شیوه جدید با گریف و اندازه دسته استاندارد اروپایی ولی با صدایی که ناله های دلفریب مناطق با شرف سیستان و بلوچستان رو حس میکنید..و این سازهای کلاسیک شهری(منطقه ای)اگر از دل خاورمیانه باشند غیر از فواصل معتدل ربع پرده هم دارند و فرق بین ایران و شام و ترکیه و مصر و لبنان در همین کم و زیادی جای بستن و قرارگیری ربع پرده هست ..اتفاقا مسئله اهنگسازی زیباتر و غنی تر هم میشود..ممنون از خواندن ..با احترام</article>
-  <footer>
-    <a class="back" id="back" href="../index.html?lang=fa#articles">بازگشت به یادداشت‌های صانع</a>
-  </footer>
+<h1 id="title">آیا نوازندهٔ ساز بومی منطقه‌ای می‌تواند آهنگسازی کند؟</h1>
+<div class="mark"></div>
+<div id="article">
+<article class="articleBody" lang="fa" dir="rtl">
+<p>چندین سال پیش برام سوالی پیش آمده بود:اگر کسی سازی غیر کلاسیک مثل پیانو یا ویولن و...بنوازد آیا میتونه آهنگساز بشه اتفاقا به صورت خیلی روشن در سالن اجرای تمرین در فرهنگسرایی جواب درست رو فهمیدم جالب بود خود کارم و سازم و راهم جواب را در جایی حین تمرین نشونم داد و از همه جالبتر شخصی در خارج از ایران همین شدنی بودن رو ازم پرسید و من هم جوابشو به صورت اجرایی در همان شب پاسخ دادم که با چشمانی مرطوب پیش من آمد و گفت متوجه شدم و الان این مورد را با تو عزیز به اشتراک میگذارم....</p>
+<p>اگر نوازنده ساز ملودیک هستی بله و زیبایی موضوع به حدی هست که هر ساز ملودیک نه کوبه ای نفس و حالت بیان خودش و داره و شما به عنوان نوازنده هم باید تمام ابعاد و زوایا و خصوصیات جنس و حس سازتون رو بشناسید و بعد در مسیر اهنگسازی و خلق کار جدید یا بازسازی کار قدیمی توانایی خودتون رو نشون دهید ...</p>
+<p>نکته خیلی مهم برای نوازندگان و حتی توصیه به آنها دارم که اگر میخواهید اثری بیافرینید لطفا دایره دانش و شناخت موسیقی خودتون رو کمی بالاتر ببرید ودرکنار ساز کوبه ای حتما یک ساز ملودیک که قلبا دوستش دارید انتخاب کنید و مسیر رو هموارتر کنید...</p>
+<p>اشاره داشتم به سازهای منطقه یعنی سازهای کلاسیک شهری منطقه خاص مثلا عراق:عود منحصر بفردی دارد با ابعاد بزرگتر و شیوه نوازندگی خاص یا دورتر نرویم سازهای ایران:تار و سه تار .کمانچه . نی .سنتورو...و حتی سازی که از 60 سال پیش فرم شهری به خودش گرفته و با افتخار اسمش و اضافه میکنم بنام قیچک ولی به شیوه جدید با گریف و اندازه دسته استاندارد اروپایی ولی با صدایی که ناله های دلفریب مناطق با شرف سیستان و بلوچستان رو حس میکنید..</p>
+<p>و این سازهای کلاسیک شهری(منطقه ای)اگر از دل خاورمیانه باشند غیر از فواصل معتدل ربع پرده هم دارند و فرق بین ایران و شام و ترکیه و مصر و لبنان در همین کم و زیادی جای بستن و قرارگیری ربع پرده هست ..اتفاقا مسئله اهنگسازی زیباتر و غنی تر هم میشود..</p>
+<p>ممنون از خواندن ..با احترام</p>
+</article>
+</div>
+<a class="back" id="back" href="../index.html?lang=fa#articles">بازگشت به یادداشت‌های صانع</a>
 </main>
+<footer id="footer">© 2026 Hormoz Sane — کلیه حقوق محفوظ است</footer>
 <script>
-const faTitle = 'آیا نوازندهٔ ساز بومی منطقه‌ای می‌تواند آهنگسازی کند؟';
-const faKicker = 'یادداشت‌های صانع';
-const faArticle = document.getElementById('article').textContent;
-const enTitle = 'Can a Regional Traditional Instrument Player Compose Music?';
-const enKicker = "Sane’s Articles";
-const enArticle = `Several years ago, a question came to my mind: if someone plays a non-classical instrument such as the piano or violin, can they become a composer? As it happened, I found the answer very clearly in the rehearsal hall of a cultural centre. It was interesting that my own work, instrument, and path showed me the answer while I was rehearsing. Even more interestingly, someone outside Iran asked me whether this was possible. That same night, I answered through a performance. They came to me with tears in their eyes and said, “I understand now.” And now I am sharing this experience with you, dear reader.
+const fa = document.getElementById('article').innerHTML;
 
-If you play a melodic instrument, yes. The beauty of this is that every melodic instrument—not a percussion instrument—has its own breath and way of expressing itself. As a player, you must know every dimension, angle, quality, and characteristic of your instrument’s sound and feeling. Then, on the path of composing and creating new work or rebuilding an older piece, you can show your ability.
+const en = `<article class="articleBody" lang="en" dir="ltr">
+<p>Several years ago, a question came to my mind: if someone plays a non-classical instrument such as the piano or violin, can they become a composer? As it happened, I found the answer very clearly in the rehearsal hall of a cultural centre. It was interesting that my own work, instrument, and path showed me the answer while I was rehearsing. Even more interestingly, someone outside Iran asked me whether this was possible. That same night, I answered through a performance. They came to me with tears in their eyes and said, “I understand now.” And now I am sharing this experience with you, dear reader.</p>
+<p>If you play a melodic instrument, yes. The beauty of this is that every melodic instrument—not a percussion instrument—has its own breath and way of expressing itself. As a player, you must know every dimension, angle, quality, and characteristic of your instrument’s sound and feeling. Then, on the path of composing and creating new work or rebuilding an older piece, you can show your ability.</p>
+<p>I have an important point for musicians, and even a recommendation: if you want to create a work, please broaden your musical knowledge and understanding a little. Alongside a percussion instrument, be sure to choose a melodic instrument that you truly love; this will make the path easier.</p>
+<p>I mentioned regional instruments—that is, classical urban instruments associated with a particular region. For example, Iraq has its distinctive oud, with larger dimensions and a particular playing style. Or we need not go far: Iran has the tar, setar, kamancheh, ney, santur, and others. There is even an instrument that has taken on an urban form over the past 60 years, whose name I proudly add here: the ghichak. In its newer form, it has a fingerboard and neck dimensions standardized to European measurements, yet its sound lets you feel the enchanting laments of the honourable regions of Sistan and Baluchestan.</p>
+<p>These classical urban (regional) instruments, if they come from the Middle East, also have quarter-tones in addition to equal-tempered intervals. The difference between Iran, the Levant, Turkey, Egypt, and Lebanon lies in the varying placement and use of quarter-tones. In fact, this also makes composition more beautiful and richer.</p>
+<p>Thank you for reading. With respect.</p>
+<p>Hormoz Sane</p>
+</article>`
 
-I have an important point for musicians, and even a recommendation: if you want to create a work, please broaden your musical knowledge and understanding a little. Alongside a percussion instrument, be sure to choose a melodic instrument that you truly love; this will make the path easier.
-
-I mentioned regional instruments—that is, classical urban instruments associated with a particular region. For example, Iraq has its distinctive oud, with larger dimensions and a particular playing style. Or we need not go far: Iran has the tar, setar, kamancheh, ney, santur, and others. There is even an instrument that has taken on an urban form over the past 60 years, whose name I proudly add here: the ghichak. In its newer form, it has a fingerboard and neck dimensions standardized to European measurements, yet its sound lets you feel the enchanting laments of the honourable regions of Sistan and Baluchestan.
-
-These classical urban (regional) instruments, if they come from the Middle East, also have quarter-tones in addition to equal-tempered intervals. The difference between Iran, the Levant, Turkey, Egypt, and Lebanon lies in the varying placement and use of quarter-tones. In fact, this also makes composition more beautiful and richer.
-
-Thank you for reading. With respect.`;
-function setLang(lang) {
-  const en = lang === 'en';
-  document.documentElement.lang = lang;
-  document.documentElement.dir = en ? 'ltr' : 'rtl';
-  document.getElementById('title').textContent = en ? enTitle : faTitle;
-  document.getElementById('kicker').textContent = en ? enKicker : faKicker;
-  document.getElementById('article').textContent = en ? enArticle : faArticle;
-  document.getElementById('back').textContent = en ? 'Back to Sane’s Articles' : 'بازگشت به یادداشت‌های صانع';
-  document.getElementById('back').href = '../index.html?lang=' + lang + '#articles';
-  document.getElementById('faBtn').classList.toggle('active', !en);
-  document.getElementById('enBtn').classList.toggle('active', en);
-  history.replaceState(null, '', '?lang=' + lang);
+function setLang(language){
+const isEn=language==='en';
+document.documentElement.lang=isEn?'en':'fa';
+document.documentElement.dir=isEn?'ltr':'rtl';
+document.getElementById('title').textContent=isEn?'Can a Regional Traditional Instrument Player Compose Music?':'آیا نوازندهٔ ساز بومی منطقه‌ای می‌تواند آهنگسازی کند؟';
+document.getElementById('article').innerHTML=isEn?en:fa;
+document.getElementById('back').textContent=isEn?'Back to Sane’s Articles':'بازگشت به یادداشت‌های صانع';
+document.getElementById('back').href=isEn?'../index.html?lang=en#articles':'../index.html?lang=fa#articles';
+document.getElementById('footer').textContent=isEn?'© 2026 Hormoz Sane — All Rights Reserved':'© 2026 Hormoz Sane — کلیه حقوق محفوظ است';
+document.title=(isEn?'Can a Regional Traditional Instrument Player Compose Music?':'آیا نوازندهٔ ساز بومی منطقه‌ای می‌تواند آهنگسازی کند؟')+' — HORMOZ SANE';
 }
-const initialLang = new URLSearchParams(location.search).get('lang') === 'en' ? 'en' : 'fa';
+const initialLang=new URLSearchParams(location.search).get('lang')==='en'?'en':'fa';
 setLang(initialLang);
 </script>
 </body>
