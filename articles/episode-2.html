@@ -32,22 +32,43 @@ main {
 }
 .lang-switch {
   display: flex;
+  align-items: center;
   justify-content: flex-start;
-  gap: 8px;
-  margin-bottom: 22px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 24px;
 }
 .lang-switch button {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+  min-height: 40px;
+  margin: 0;
+  padding: 7px 16px;
+  border: 1px solid var(--mustard);
+  border-radius: 5px;
   background: transparent;
   color: var(--text);
-  border: 1px solid var(--mustard);
-  padding: 6px 12px;
-  font: inherit;
-  line-height: 1.5;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  white-space: nowrap;
   cursor: pointer;
+}
+.lang-switch button:hover,
+.lang-switch button:focus-visible {
+  outline: none;
+  border-color: var(--mustard);
+  box-shadow: 0 0 0 2px rgba(210, 174, 73, .22);
 }
 .lang-switch button.active {
   background: var(--mustard);
   color: var(--bg);
+  border-color: var(--mustard);
 }
 .kicker {
   margin: 0 0 12px;
