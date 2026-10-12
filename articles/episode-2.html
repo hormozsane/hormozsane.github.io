@@ -1,4 +1,4 @@
-
+```html
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>آیا نوازندهٔ ساز غیرکلاسیک می‌تواند آهنگسازی کند؟ — HORMOZ SANE</title>
 <meta name="description" content="یادداشتی از هرمز صانع دربارهٔ آهنگسازی و سازهای ملودیک.">
-<link rel="canonical" href="https://hormozsane.github.io/articles/episode-2.html">
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#173b32;color:#f3ead7;font-family:Tahoma,Arial,sans-serif}
@@ -44,7 +43,7 @@ footer{text-align:center;padding:18px;font:13px Georgia,serif;color:#eadcc3;bord
 <p>هرمز صانع</p>
 </article>
 </div>
-<a class="back" id="back" href="../index.html#articles">بازگشت به یادداشت‌های صانع</a>
+<a class="back" id="back" href="../index.html?lang=fa#articles">بازگشت به یادداشت‌های صانع</a>
 </main>
 <footer id="footer">© 2026 Hormoz Sane — کلیه حقوق محفوظ است</footer>
 <script>
@@ -59,15 +58,19 @@ const en = `<article class="articleBody" lang="en" dir="ltr">
 <p>Hormoz Sane</p>
 </article>`;
 function setLang(language){
-const isEn=language==='en';
-document.documentElement.lang=isEn?'en':'fa';
-document.documentElement.dir=isEn?'ltr':'rtl';
-document.getElementById('title').textContent=isEn?'Can a Non-Classical Instrumentalist Become a Composer?':'آیا نوازندهٔ ساز غیرکلاسیک می‌تواند آهنگسازی کند؟';
-document.getElementById('article').innerHTML=isEn?en:fa;
-document.getElementById('back').textContent=isEn?'Back to Sane’s Articles':'بازگشت به یادداشت‌های صانع';
-document.getElementById('footer').textContent=isEn?'© 2026 Hormoz Sane — All Rights Reserved':'© 2026 Hormoz Sane — کلیه حقوق محفوظ است';
-document.title=(isEn?'Can a Non-Classical Instrumentalist Become a Composer?':'آیا نوازندهٔ ساز غیرکلاسیک می‌تواند آهنگسازی کند؟')+' — HORMOZ SANE';
+ const isEn=language==='en';
+ document.documentElement.lang=isEn?'en':'fa';
+ document.documentElement.dir=isEn?'ltr':'rtl';
+ document.getElementById('title').textContent=isEn?'Can a Non-Classical Instrumentalist Become a Composer?':'آیا نوازندهٔ ساز غیرکلاسیک می‌تواند آهنگسازی کند؟';
+ document.getElementById('article').innerHTML=isEn?en:fa;
+ document.getElementById('back').textContent=isEn?'Back to Sane’s Articles':'بازگشت به یادداشت‌های صانع';
+ document.getElementById('back').href='../index.html?lang='+language+'#articles';
+ document.getElementById('footer').textContent=isEn?'© 2026 Hormoz Sane — All Rights Reserved':'© 2026 Hormoz Sane — کلیه حقوق محفوظ است';
+ document.title=(isEn?'Can a Non-Classical Instrumentalist Become a Composer?':'آیا نوازندهٔ ساز غیرکلاسیک می‌تواند آهنگسازی کند؟')+' — HORMOZ SANE';
+ const url=new URL(location.href);url.searchParams.set('lang',language);history.replaceState(null,'',url);
 }
+setLang(new URLSearchParams(location.search).get('lang')==='en'?'en':'fa');
 </script>
 </body>
 </html>
+```
