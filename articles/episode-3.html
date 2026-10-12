@@ -1,161 +1,77 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>نقش هوش مصنوعی، ساز و نوازندگی — HORMOZ SANE</title>
-  <link rel="canonical" href="https://hormozsane.github.io/articles/episode-3.html">
-  <style>
-    body {
-      margin: 0;
-      padding: 18px 6vw;
-      background: #173b32;
-      color: #f3ead7;
-      font-family: Tahoma, Arial, sans-serif;
-      line-height: 2.15;
-    }
-    main {
-      max-width: 850px;
-      margin: 0 auto;
-    }
-    h1 {
-      text-align: center;
-      font-size: 1.8rem;
-      line-height: 1.8;
-      margin: 34px 0;
-    }
-    p {
-      margin: 0 0 22px;
-      font-size: 1.05rem;
-    }
-    .controls {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      margin: 18px 0 30px;
-    }
-    button {
-      background: transparent;
-      color: #f3ead7;
-      border: 1px solid #d2ae49;
-      padding: 7px 18px;
-      font: inherit;
-      cursor: pointer;
-    }
-    button:hover,
-    button.active {
-      background: #d2ae49;
-      color: #173b32;
-    }
-    .back {
-      display: inline-block;
-      margin-top: 22px;
-      color: #d2ae49;
-      text-decoration: none;
-    }
-    .back:hover {
-      text-decoration: underline;
-    }
-    footer {
-      margin-top: 42px;
-      padding-top: 16px;
-      border-top: 1px solid #d2ae49;
-      text-align: center;
-      font-size: 0.85rem;
-    }
-    [dir="ltr"] body {
-      text-align: left;
-    }
-    [dir="ltr"] .back {
-      direction: ltr;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نقش هوش مصنوعی، ساز و نوازندگی — HORMOZ SANE</title>
+<meta name="description" content="یادداشتی از هرمز صانع دربارهٔ هوش مصنوعی، موسیقی و نوازندگی.">
+<link rel="canonical" href="https://hormozsane.github.io/articles/episode-3.html">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#173b32;color:#f3ead7;font-family:Tahoma,Arial,sans-serif}
+.top{display:flex;justify-content:flex-end;align-items:center;padding:18px 6vw;border-bottom:1px solid #d2ae4955}
+.languages{display:flex;gap:12px;align-items:center;font-size:14px}
+.languages button{background:transparent;border:0;color:#f3ead7;cursor:pointer;font:inherit}
+main{max-width:900px;margin:0 auto;padding:7vh 28px 12vh}
+h1{font-size:32px;line-height:1.8;font-weight:400;text-align:center;margin:0 0 10px;color:#f3ead7}
+.mark{width:180px;height:2px;margin:10px auto 34px;background:linear-gradient(to right,#d2ae49,rgba(210,174,73,.2),transparent)}
+.articleBody{max-width:850px;margin:0 auto;line-height:2.15;font-size:18px}
+.articleBody p{margin:0 0 20px}
+.back{display:inline-block;margin-top:36px;color:#d2ae49;text-decoration:none}
+.back:hover{color:#f3ead7}
+footer{text-align:center;padding:18px;font:13px Georgia,serif;color:#eadcc3;border-top:1px solid #ffffff22}
+@media(max-width:600px){main{padding:5vh 20px 10vh}h1{font-size:27px}.articleBody{font-size:16px}}
+</style>
 </head>
 <body>
-  <main>
-    <div class="controls">
-      <button id="faButton" class="active" onclick="setLang('fa')">فارسی</button>
-      <button id="enButton" onclick="setLang('en')">English</button>
-    </div>
+<header class="top">
+<div class="languages">
+<button onclick="setLang('fa')">فارسی</button><span>·</span><button onclick="setLang('en')">English</button>
+</div>
+</header>
+<main>
+<h1 id="title">نقش هوش مصنوعی، ساز و نوازندگی</h1>
+<div class="mark"></div>
+<div id="article">
+<article class="articleBody" lang="fa" dir="rtl">
+<p>در اینستاگرام و چند پلتفرم مشابه، به افرادی برخورده‌ام که برای دیده‌شدن، دربارهٔ آیندهٔ انسان و هوش مصنوعی و نگرانی‌های پیرامون آن صحبت می‌کنند؛ افرادی که گاه آشنایی چندانی با فرهنگ و هنر ندارند، اما چنان از نقش فراگیر هوش مصنوعی سخن می‌گویند که گویی همه‌چیز از هم‌اکنون در اختیار آن قرار گرفته است.</p>
+<p>خیر، دوستان؛ می‌توان به بیراهه رفت. هوش مصنوعی می‌تواند قطعاتی تولید کند که شاید برای گوش غیرمتخصص خوشایند باشند، اما گوش تربیت‌شدهٔ یک موسیقی‌دان و نوازندهٔ حرفه‌ای، تفاوت میان صدای مصنوعی و صدای برخاسته از چوب و پوست را به‌خوبی تشخیص می‌دهد. برای فهم این تفاوت، نیازی به سفسطه و فریب نیست.</p>
+<p>اتفاقاً پلتفرم‌ها نیز این تفاوت‌ها را تشخیص می‌دهند، اما شنوندهٔ ناآگاه ممکن است تصور کند که از همین حالا در جهانی غوطه‌ور شده که هوش مصنوعی همهٔ نقش‌ها را در آن بر عهده گرفته است؛ تصوری که می‌تواند او را گمراه کند. گاهی به نظر می‌رسد آنچه پشت این سخنان قرار دارد، چیزی جز میل به دیده‌شدن نیست.</p>
+<p>برای روشن‌تر شدن منظورم، مثالی می‌زنم که به هوش مصنوعی جمینای مربوط است.</p>
+<p>اخیراً، با توجه به شناختی که از رنگ‌ها و نورپردازی در تصویر و فیلم دارم، تصمیم گرفتم آن را امتحان کنم. در این تجربه متوجه شدم که هنوز در شناخت کدهای رنگ، تنظیم نور و به‌کارگیری فیلترها با مشکلاتی روبه‌روست و حتی برخی از واژگان تخصصی تصویربرداری و تصویرسازی را به‌درستی نمی‌شناسد.</p>
+<p>حقیقت این است که یک فرد کاربلد و یک هنرمند، هیچ‌گاه چنین ابزارهایی را بی‌چون‌وچرا ابزار اصلی کار خود نمی‌دانند. هوش مصنوعی می‌تواند در موقعیت‌هایی مشخص به کار بیاید و راه انجام برخی کارها را هموار کند؛ اما این با تنگ‌کردن جای هنرمند و نادیده‌گرفتن تجربه، شناخت و مهارت او تفاوت دارد.</p>
+<p>با احترام، هرمز صانع</p>
+</article>
+</div>
+<a class="back" id="back" href="../index.html?lang=fa#articles">بازگشت به یادداشت‌های صانع</a>
+</main>
+<footer id="footer">© 2026 Hormoz Sane — کلیه حقوق محفوظ است</footer>
+<script>
+const fa = document.getElementById('article').innerHTML;
 
-    <article>
-      <h1 id="title">نقش هوش مصنوعی، ساز و نوازندگی</h1>
-      <div id="content">
-        <p>در اینستاگرام و چند پلتفرم مشابه، به افرادی برخورده‌ام که برای دیده‌شدن، دربارهٔ آیندهٔ انسان و هوش مصنوعی و نگرانی‌های پیرامون آن صحبت می‌کنند؛ افرادی که گاه آشنایی چندانی با فرهنگ و هنر ندارند، اما چنان از نقش فراگیر هوش مصنوعی سخن می‌گویند که گویی همه‌چیز از هم‌اکنون در اختیار آن قرار گرفته است.</p>
+const en = `<article class="articleBody" lang="en" dir="ltr">
+<p>On Instagram and a few similar platforms, I have come across people who speak about the future of humanity and artificial intelligence, and the anxieties surrounding it, in order to gain visibility. Some have little familiarity with culture and the arts, yet speak about AI's all-encompassing role as though everything were already in its hands.</p>
+<p>No, friends; one can be led down the wrong path. Artificial intelligence can produce pieces that may sound pleasing to an untrained ear. But the trained ear of a musician and professional instrumentalist can readily distinguish artificial sound from sound that comes from wood and skin. There is no need for sophistry or deception to understand this difference.</p>
+<p>Platforms, too, can recognise these differences. Yet an uninformed listener may imagine that we have already entered a world in which artificial intelligence has taken over every role. This impression can be misleading. At times, it seems that the motive behind such statements is little more than a desire for visibility.</p>
+<p>To make my point clearer, I will give an example involving Google's Gemini AI.</p>
+<p>Recently, drawing on my knowledge of colour and lighting in images and film, I decided to test it. I found that it still struggles with colour codes, lighting adjustments and the use of filters; it also fails to recognise some specialised terms used in imaging and visual production.</p>
+<p>The truth is that a skilled professional and an artist would never accept such tools unconditionally as the primary instrument of their work. AI can be useful in specific situations and can make certain tasks easier. But that is very different from displacing artists and disregarding their experience, understanding and skill.</p>
+<p>Respectfully,</p>
+<p>Hormoz Sane</p>
+</article>`;
 
-        <p>خیر، دوستان؛ می‌توان به بیراهه رفت. هوش مصنوعی می‌تواند قطعاتی تولید کند که شاید برای گوش غیرمتخصص خوشایند باشند، اما گوش تربیت‌شدهٔ یک موسیقی‌دان و نوازندهٔ حرفه‌ای، تفاوت میان صدای مصنوعی و صدای برخاسته از چوب و پوست را به‌خوبی تشخیص می‌دهد. برای فهم این تفاوت، نیازی به سفسطه و فریب نیست.</p>
-
-        <p>اتفاقاً پلتفرم‌ها نیز این تفاوت‌ها را تشخیص می‌دهند، اما شنوندهٔ ناآگاه ممکن است تصور کند که از همین حالا در جهانی غوطه‌ور شده که هوش مصنوعی همهٔ نقش‌ها را در آن بر عهده گرفته است؛ تصوری که می‌تواند او را گمراه کند. گاهی به نظر می‌رسد آنچه پشت این سخنان قرار دارد، چیزی جز میل به دیده‌شدن نیست.</p>
-
-        <p>برای روشن‌تر شدن منظورم، مثالی می‌زنم که به هوش مصنوعی جمینای مربوط است.</p>
-
-        <p>اخیراً، با توجه به شناختی که از رنگ‌ها و نورپردازی در تصویر و فیلم دارم، تصمیم گرفتم آن را امتحان کنم. در این تجربه متوجه شدم که هنوز در شناخت کدهای رنگ، تنظیم نور و به‌کارگیری فیلترها با مشکلاتی روبه‌روست و حتی برخی از واژگان تخصصی تصویربرداری و تصویرسازی را به‌درستی نمی‌شناسد.</p>
-
-        <p>حقیقت این است که یک فرد کاربلد و یک هنرمند، هیچ‌گاه چنین ابزارهایی را بی‌چون‌وچرا ابزار اصلی کار خود نمی‌دانند. هوش مصنوعی می‌تواند در موقعیت‌هایی مشخص به کار بیاید و راه انجام برخی کارها را هموار کند؛ اما این با تنگ‌کردن جای هنرمند و نادیده‌گرفتن تجربه، شناخت و مهارت او تفاوت دارد.</p>
-
-        <p>با احترام، هرمز صانع</p>
-      </div>
-    </article>
-
-    <a class="back" id="backLink" href="../index.html?lang=fa#articles">بازگشت به یادداشت‌های صانع</a>
-
-    <footer id="footer">© 2026 Hormoz Sane — کلیه حقوق محفوظ است</footer>
-  </main>
-
-  <script>
-    const englishContent = `
-      <p>On Instagram and a few similar platforms, I have come across people who speak about the future of humanity and artificial intelligence, and the anxieties surrounding it, in order to gain visibility. Some have little familiarity with culture and the arts, yet speak about AI's all-encompassing role as though everything were already in its hands.</p>
-
-      <p>No, friends; that is a misleading path. Artificial intelligence can produce pieces that may sound pleasing to an untrained ear. But the trained ear of a musician and professional instrumentalist can readily distinguish artificial sound from sound that comes from wood and skin. There is no need for sophistry or deception to understand this difference.</p>
-
-      <p>Platforms, too, can recognise these differences. Yet an uninformed listener may imagine that we have already entered a world in which artificial intelligence has taken over every role. This impression can be misleading. At times, it seems that the motive behind such statements is little more than a desire for visibility.</p>
-
-      <p>To make my point clearer, I will give an example involving Google's Gemini AI.</p>
-
-      <p>Recently, drawing on my knowledge of colour and lighting in images and film, I decided to test it. I found that it still struggles with colour codes, lighting adjustments and the use of filters; it also fails to recognise some specialised terms used in imaging and visual production.</p>
-
-      <p>The truth is that a skilled professional and an artist would never accept such tools unconditionally as the primary instrument of their work. AI can be useful in specific situations and can make certain tasks easier. But that is very different from displacing artists and disregarding their experience, understanding and skill.</p>
-
-      <p>Respectfully,<br>Hormoz Sane</p>
-    `;
-
-    function setLang(language) {
-      const isEnglish = language === 'en';
-      document.documentElement.lang = isEnglish ? 'en' : 'fa';
-      document.documentElement.dir = isEnglish ? 'ltr' : 'rtl';
-
-      document.getElementById('title').textContent = isEnglish
-        ? 'Artificial Intelligence, the Setar and Performance'
-        : 'نقش هوش مصنوعی، ساز و نوازندگی';
-
-      document.getElementById('content').innerHTML = isEnglish
-        ? englishContent
-        : `
-          <p>در اینستاگرام و چند پلتفرم مشابه، به افرادی برخورده‌ام که برای دیده‌شدن، دربارهٔ آیندهٔ انسان و هوش مصنوعی و نگرانی‌های پیرامون آن صحبت می‌کنند؛ افرادی که گاه آشنایی چندانی با فرهنگ و هنر ندارند، اما چنان از نقش فراگیر هوش مصنوعی سخن می‌گویند که گویی همه‌چیز از هم‌اکنون در اختیار آن قرار گرفته است.</p>
-          <p>خیر، دوستان؛ می‌توان به بیراهه رفت. هوش مصنوعی می‌تواند قطعاتی تولید کند که شاید برای گوش غیرمتخصص خوشایند باشند، اما گوش تربیت‌شدهٔ یک موسیقی‌دان و نوازندهٔ حرفه‌ای، تفاوت میان صدای مصنوعی و صدای برخاسته از چوب و پوست را به‌خوبی تشخیص می‌دهد. برای فهم این تفاوت، نیازی به سفسطه و فریب نیست.</p>
-          <p>اتفاقاً پلتفرم‌ها نیز این تفاوت‌ها را تشخیص می‌دهند، اما شنوندهٔ ناآگاه ممکن است تصور کند که از همین حالا در جهانی غوطه‌ور شده که هوش مصنوعی همهٔ نقش‌ها را در آن بر عهده گرفته است؛ تصوری که می‌تواند او را گمراه کند. گاهی به نظر می‌رسد آنچه پشت این سخنان قرار دارد، چیزی جز میل به دیده‌شدن نیست.</p>
-          <p>برای روشن‌تر شدن منظورم، مثالی می‌زنم که به هوش مصنوعی جمینای مربوط است.</p>
-          <p>اخیراً، با توجه به شناختی که از رنگ‌ها و نورپردازی در تصویر و فیلم دارم، تصمیم گرفتم آن را امتحان کنم. در این تجربه متوجه شدم که هنوز در شناخت کدهای رنگ، تنظیم نور و به‌کارگیری فیلترها با مشکلاتی روبه‌روست و حتی برخی از واژگان تخصصی تصویربرداری و تصویرسازی را به‌درستی نمی‌شناسد.</p>
-          <p>حقیقت این است که یک فرد کاربلد و یک هنرمند، هیچ‌گاه چنین ابزارهایی را بی‌چون‌وچرا ابزار اصلی کار خود نمی‌دانند. هوش مصنوعی می‌تواند در موقعیت‌هایی مشخص به کار بیاید و راه انجام برخی کارها را هموار کند؛ اما این با تنگ‌کردن جای هنرمند و نادیده‌گرفتن تجربه، شناخت و مهارت او تفاوت دارد.</p>
-          <p>با احترام، هرمز صانع</p>
-        `;
-
-      document.getElementById('backLink').textContent = isEnglish
-        ? 'Back to Sane Notes'
-        : 'بازگشت به یادداشت‌های صانع';
-
-      document.getElementById('backLink').href = isEnglish
-        ? '../index.html#articles'
-        : '../index.html?lang=fa#articles';
-
-      document.getElementById('footer').textContent = isEnglish
-        ? '© 2026 Hormoz Sane — All Rights Reserved'
-        : '© 2026 Hormoz Sane — کلیه حقوق محفوظ است';
-
-      document.getElementById('faButton').classList.toggle('active', !isEnglish);
-      document.getElementById('enButton').classList.toggle('active', isEnglish);
-    }
-  </script>
+function setLang(language){
+const isEn=language==='en';
+document.documentElement.lang=isEn?'en':'fa';
+document.documentElement.dir=isEn?'ltr':'rtl';
+document.getElementById('title').textContent=isEn?'Artificial Intelligence, Musical Instruments and Performance':'نقش هوش مصنوعی، ساز و نوازندگی';
+document.getElementById('article').innerHTML=isEn?en:fa;
+document.getElementById('back').textContent=isEn?'Back to Sane’s Articles':'بازگشت به یادداشت‌های صانع';
+document.getElementById('back').href=isEn?'../index.html#articles':'../index.html?lang=fa#articles';
+document.getElementById('footer').textContent=isEn?'© 2026 Hormoz Sane — All Rights Reserved':'© 2026 Hormoz Sane — کلیه حقوق محفوظ است';
+document.title=(isEn?'Artificial Intelligence, Musical Instruments and Performance':'نقش هوش مصنوعی، ساز و نوازندگی')+' — HORMOZ SANE';
+}
+</script>
 </body>
 </html>
