@@ -12,6 +12,8 @@ body{margin:0;background:#173b32;color:#f3ead7;font-family:Tahoma,Arial,sans-ser
 .top{display:flex;justify-content:flex-end;align-items:center;padding:18px 6vw;border-bottom:1px solid #d2ae4955}
 .languages{display:flex;gap:12px;align-items:center;font-size:14px}
 .languages span{color:#f3ead7}
+.languages button{background:transparent;border:0;color:#f3ead7;cursor:pointer;font:inherit;padding:5px 8px}
+.languages button.active{color:#d2ae49;text-decoration:underline;text-underline-offset:5px}
 main{max-width:900px;margin:0 auto;padding:7vh 28px 12vh}
 h1{font-size:32px;line-height:1.8;font-weight:400;text-align:center;margin:0 0 10px;color:#f3ead7}
 .subtitle{text-align:center;font-size:18px;line-height:2;color:#eadcc3;margin:0 auto 10px}
@@ -26,13 +28,13 @@ footer{text-align:center;padding:18px;font:13px Georgia,serif;color:#eadcc3;bord
 </head>
 <body>
 <header class="top">
-<div class="languages"><span>فارسی</span><span>·</span><span>English — به‌زودی</span></div>
+<div class="languages"><button type="button" onclick="setLang('fa')" id="faBtn">فارسی</button><span>·</span><button type="button" onclick="setLang('en')" id="enBtn">English</button></div>
 </header>
 <main>
 <h1 id="title">مکتب یا شیوه؟ کدام؟</h1>
-<p class="subtitle">از سنت‌های موسیقی دستگاهی تا رسیدن به عصر هوش مصنوعی</p>
+<p class="subtitle" id="subtitle">از سنت‌های موسیقی دستگاهی تا رسیدن به عصر هوش مصنوعی</p>
 <div class="mark"></div>
-<article class="articleBody" lang="fa" dir="rtl">
+<article class="articleBody" id="faArticle" lang="fa" dir="rtl">
 <p>در گفتار هنری، واژه‌های مکتب و شیوه گاهی به‌جای هم به کار می‌روند و حتی خیلی از نوازنده‌ها موقعیت را نمی‌شناسند و برای خودی نشان دادن، از قصد عموم را دچار شبهه می‌کنند؛ انگار هر هنرمندی که زبان اجرایی متمایزی پیدا می‌کند، صاحب مکتب است. این استفاده می‌تواند مرز میان سنت و پایه و ریشه، تا رسیدن چندین‌ساله به بیان فردی را مخدوش کند.</p>
 <p>مکتب در کل، روایتی است براساس مجموعه‌ای از اصول و نگرش‌ها (جهان‌بینی)، در پاسخ به نیاز و شرایط دوره‌ای خاص، در جغرافیا و تحولات اجتماعی.</p>
 <p>راحت‌تر بگوییم، مکتب اصول کلی و مشترک است، نه اسم خاص.</p>
@@ -63,8 +65,43 @@ footer{text-align:center;padding:18px;font:13px Georgia,serif;color:#eadcc3;bord
 <p>موفق باشید</p>
 <p><strong>هرمز صانع</strong></p>
 </article>
+<article class="articleBody" id="enArticle" lang="en" dir="ltr" hidden>
+<p>In artistic discourse, the words “school” and “style” are sometimes used interchangeably. Many musicians also fail to recognize the distinction and, to make themselves look important, deliberately leave the public confused—as if every artist who develops a distinctive performance language has founded a school. This usage blurs the boundary between tradition, its foundations and roots, and the years-long journey toward an individual voice.</p>
+<p>Broadly speaking, a school is a way of thinking based on a set of principles and a worldview, shaped in response to the needs and circumstances of a particular period, its geography, and its social changes.</p>
+<p>Put simply, a school is a set of general, shared principles—not a proper name.</p>
+<p>Let’s not stray too far. Let’s leave music for a moment and visit the world of acting.</p>
+<p>There is a Stanislavski school of acting in Russia, intended to develop talented actors.</p>
+<p>But there is no school of acting called the Al Pacino School. Why?</p>
+<p>Because the existence of such a giant would itself contradict the idea: Al Pacino is Al Pacino. Yet his distinctive style, expression, and behavior can be understood under the umbrella of a particular school, and they can be observed and learned.</p>
+<p>Now let’s turn back to music. You should by now recognize the point of my obvious example.</p>
+<p>In the music of the Middle East and Iran, we find names such as the Tehran, Shiraz, Zanjan, and Isfahan schools. More interestingly, the musical forms themselves differ in their general characteristics, allowing us to recognize the influence of tradition, social thought, and the scholars nurtured in those places—even in closely related fields such as architecture and the traditional crafts that are now disappearing.</p>
+<p>Other forms belong to regional music and are important, but are not considered classical reference points in the same sense—for example, the music and indigenous instruments of Mazandaran, or the music of Yazd, and so on.</p>
+<p>I think the distinction should now be easier to grasp.</p>
+<p>A musician may learn the principles of music within a particular tradition, yet develop a personal voice in phrasing, timing, plectrum technique, breath, bowing, and, fundamentally, tone quality—though this takes time, not a few quick steps.</p>
+<p>Such independence of expression does not mean founding a school.</p>
+<p>A more interesting example is learning the principles of setar playing from the Farahani family and understanding the radif of one of its members. That does not necessarily mean fully following that person’s performance style.</p>
+<p>Parenthetically, this distinction matters to those whose work is music and instrumental performance. There are plenty of imitators, but genuinely new expression and a distinctive style are rare.</p>
+<p>Let’s turn to cinema again—this time, Iranian cinema.</p>
+<p>Consider Dariush Mehrjui’s body of work, and specifically <em>Hamoun</em>: its philosophical and surrealist tendencies, alongside elements drawn from his own lived experience, and the golden performance of Khosrow Shakibai, one of the most influential actors of the post-revolution era. The film, its direction, and Mehrjui’s ability to guide it are expressions of his personal style, not a school.</p>
+<p>Flamenco guitar offers another example. We can distinguish the broader tradition from individual expressive styles, such as those of Paco de Lucía and Tomatito, while also naming figures closer to the classical flamenco school, including Peña and many others.</p>
+<p>Given his short life, Paco de Lucía’s historical impact on the evolution of modern guitar language—and even on details such as the material and gauge of the third treble string—is certainly worth discussing for hours, even months. But when we speak of a “school of de Lucía,” we should clarify whether we mean a particular movement or simply his personal expression.</p>
+<p>And here is an even more interesting point:</p>
+<p>Given the arrival of artificial intelligence—as a tool, of course—is it right to speak of an “AI school”?</p>
+<p>Please take a look at my articles, especially “The Role of Artificial Intelligence,” and read it carefully. Doing so would make me happy as well.</p>
+<p>I’ll leave the answer to the following question to you:</p>
+<p>Artificial intelligence is merely a tool, inclined toward rapid production without depth; nevertheless, it can be useful in exploring new sounds and even newer combinations of sound, and in making unexpected semantic connections more easily. Around the world, several deeply expressive yet clearly identifiable themes for film music have already been created through rapid production.</p>
+<p>But should we call it a school, an expressive voice, or an assisting tool?</p>
+<p>If we challenge the idea of a school, the new generation has embraced AI—but it has no roots, much like the age of those teenagers. Yet is it important enough to have the concrete foundations of traditional schools?</p>
+<p>The answer is yours.</p>
+<p>Best wishes,</p>
+<p><strong>HORMOZ SANE</strong></p>
+</article>
 <a class="back" id="back" href="../index.html?lang=fa#articles">بازگشت به یادداشت‌های صانع</a>
 </main>
 <footer id="footer">© 2026 Hormoz Sane — کلیه حقوق محفوظ است</footer>
+<script>
+function setLang(lang){const fa=lang==='fa';document.documentElement.lang=lang;document.documentElement.dir=fa?'rtl':'ltr';document.getElementById('faArticle').hidden=!fa;document.getElementById('enArticle').hidden=fa;document.getElementById('title').textContent=fa?'مکتب یا شیوه؟ کدام؟':'School or Style? Which?';document.getElementById('subtitle').textContent=fa?'از سنت‌های موسیقی دستگاهی تا رسیدن به عصر هوش مصنوعی':'From the traditions of Persian modal music to the age of artificial intelligence';document.getElementById('back').textContent=fa?'بازگشت به یادداشت‌های صانع':'Back to Sane’s articles';document.getElementById('back').href='../index.html?lang='+lang+'#articles';document.getElementById('footer').textContent=fa?'© 2026 Hormoz Sane — کلیه حقوق محفوظ است':'© 2026 Hormoz Sane — All rights reserved';document.getElementById('faBtn').classList.toggle('active',fa);document.getElementById('enBtn').classList.toggle('active',!fa)}
+setLang('fa');
+</script>
 </body>
 </html>
