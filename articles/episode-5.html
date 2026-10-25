@@ -101,7 +101,7 @@ footer{text-align:center;padding:18px;font:13px Georgia,serif;color:#eadcc3;bord
 <footer id="footer">© 2026 Hormoz Sane — کلیه حقوق محفوظ است</footer>
 <script>
 function setLang(lang){const fa=lang==='fa';document.documentElement.lang=lang;document.documentElement.dir=fa?'rtl':'ltr';document.getElementById('faArticle').hidden=!fa;document.getElementById('enArticle').hidden=fa;document.getElementById('title').textContent=fa?'مکتب یا شیوه؟ کدام؟':'School or Style? Which?';document.getElementById('subtitle').textContent=fa?'از سنت‌های موسیقی دستگاهی تا رسیدن به عصر هوش مصنوعی':'From the traditions of Persian modal music to the age of artificial intelligence';document.getElementById('back').textContent=fa?'بازگشت به یادداشت‌های صانع':'Back to Sane’s articles';document.getElementById('back').href='../index.html?lang='+lang+'#articles';document.getElementById('footer').textContent=fa?'© 2026 Hormoz Sane — کلیه حقوق محفوظ است':'© 2026 Hormoz Sane — All rights reserved';document.getElementById('faBtn').classList.toggle('active',fa);document.getElementById('enBtn').classList.toggle('active',!fa)}
-setLang('fa');
+setLang(new URLSearchParams(window.location.search).get('lang')==='en'?'en':'fa');
 </script>
 </body>
 </html>
