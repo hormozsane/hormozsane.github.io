@@ -1,10 +1,43 @@
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://hormozsane.github.io/</loc></url>
-  <url><loc>https://hormozsane.github.io/about.html</loc></url>
-  <url><loc>https://hormozsane.github.io/articles/episode-1.html</loc></url>
-  <url><loc>https://hormozsane.github.io/articles/episode-2.html</loc></url>
-  <url><loc>https://hormozsane.github.io/articles/episode-3.html</loc></url>
-  <url><loc>https://hormozsane.github.io/articles/episode-4.html</loc></url>
-  <url><loc>https://hormozsane.github.io/articles/episode-5.html</loc></url>
+
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- صفحه اصلی سایت -->
+    <url>
+        <loc>https://hormozsane.github.io/</loc>
+    </url>
+
+    <!-- صفحه درباره من -->
+    <url>
+        <loc>https://hormozsane.github.io/about.html</loc>
+    </url>
+
+    <!-- مقاله اول -->
+    <url>
+        <loc>https://hormozsane.github.io/articles/episode-1.html</loc>
+    </url>
+
+    <!-- مقاله دوم -->
+    <url>
+        <loc>https://hormozsane.github.io/articles/episode-2.html</loc>
+    </url>
+
+    <!-- مقاله سوم -->
+    <url>
+        <loc>https://hormozsane.github.io/articles/episode-3.html</loc>
+    </url>
+
+    <!-- مقاله چهارم -->
+    <url>
+        <loc>https://hormozsane.github.io/articles/episode-4.html</loc>
+    </url>
+
+    <!-- مقاله پنجم -->
+    <url>
+        <loc>https://hormozsane.github.io/articles/episode-5.html</loc>
+    </url>
+
 </urlset>
+```
