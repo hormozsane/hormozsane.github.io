@@ -3,10 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About Hormoz Sane | هرمز صانع — Official Artist Profile</title>
-<meta name="description" content="Official profile of Hormoz Sane (هرمز صانع), Iranian musician, composer, and researcher of Iranian music, focused on the setar.">
+<title>About Hormoz Sane | هرمز صانع — Iranian Musician & Setar</title>
+<meta name="description" content="Official profile of Hormoz Sane (هرمز صانع), Iranian musician, composer and researcher of Iranian music, with a focus on the setar (سه‌تار).">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://hormozsane.github.io/about.html">
+<meta name="author" content="Hormoz Sane | هرمز صانع">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Hormoz Sane | هرمز صانع">
+<meta property="og:title" content="About Hormoz Sane | هرمز صانع — Iranian Musician & Setar">
+<meta property="og:description" content="Official profile of Hormoz Sane (هرمز صانع), Iranian musician, composer and researcher of Iranian music, with a focus on the setar (سه‌تار).">
+<meta property="og:url" content="https://hormozsane.github.io/about.html?lang=en">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Hormoz Sane | هرمز صانع — Iranian Musician & Setar">
+<meta name="twitter:description" content="Official profile of Hormoz Sane (هرمز صانع), Iranian musician, composer and researcher of Iranian music, with a focus on the setar (سه‌تار).">
+<link rel="canonical" href="https://hormozsane.github.io/about.html?lang=en">
 <link rel="alternate" hreflang="en" href="https://hormozsane.github.io/about.html?lang=en">
 <link rel="alternate" hreflang="fa" href="https://hormozsane.github.io/about.html?lang=fa">
 <link rel="alternate" hreflang="x-default" href="https://hormozsane.github.io/about.html?lang=en">
@@ -34,8 +45,9 @@
     "name": "Hormoz Sane",
     "alternateName": "هرمز صانع",
     "url": "https://hormozsane.github.io/about.html",
-    "description": "Iranian musician, composer, and researcher of Iranian music, focused on the setar.",
+    "description": "Hormoz Sane (هرمز صانع) is an Iranian musician, composer, and researcher of Iranian music, with a focus on the setar (سه‌تار). | هرمز صانع نوازنده، آهنگساز و پژوهشگر موسیقی ایرانی با تمرکز بر ساز سه‌تار است.",
     "jobTitle": ["Musician", "Composer", "Researcher of Iranian Music"],
+    "knowsAbout": ["Setar", "سه‌تار", "Iranian music", "موسیقی ایرانی", "Persian traditional music"],
     "image": "https://hormozsane.github.io/assets/portrait.JPG"
   }
 }
@@ -57,8 +69,21 @@ function renderProfile(){
   document.documentElement.lang=lang;
   document.documentElement.dir=lang==="fa"?"rtl":"ltr";
   document.title=lang==="en"?"About Hormoz Sane | هرمز صانع — Official Artist Profile":"درباره هرمز صانع | Hormoz Sane — وب‌سایت رسمی";
-  document.querySelector('meta[name="description"]').content=lang==="en"?"Official profile of Hormoz Sane (هرمز صانع), Iranian musician, composer, and researcher of Iranian music, focused on the setar.":"صفحه رسمی هرمز صانع؛ نوازنده، آهنگساز و پژوهشگر موسیقی ایرانی با تمرکز بر ساز سه‌تار.";
+  const pageTitle=lang==="en"?"About Hormoz Sane | هرمز صانع — Iranian Musician & Setar":"درباره هرمز صانع | Hormoz Sane — موسیقی ایرانی و سه‌تار";
+  const pageDescription=lang==="en"?"Official profile of Hormoz Sane (هرمز صانع), Iranian musician, composer and researcher of Iranian music, with a focus on the setar (سه‌تار).":"صفحه رسمی هرمز صانع (Hormoz Sane)، نوازنده، آهنگساز و پژوهشگر موسیقی ایرانی با تمرکز بر ساز سه‌تار (Setar).";
+  document.title=pageTitle;
+  document.querySelector('meta[name="description"]').content=pageDescription;
+  document.querySelector('meta[property="og:title"]').content=pageTitle;
+  document.querySelector('meta[property="og:description"]').content=pageDescription;
+  document.querySelector('meta[property="og:url"]').content="https://hormozsane.github.io/about.html?lang="+lang;
+  document.querySelector('meta[property="og:locale"]').content=lang==="fa"?"fa_IR":"en_US";
+  document.querySelector('meta[property="og:locale:alternate"]').content=lang==="fa"?"en_US":"fa_IR";
+  document.querySelector('meta[name="twitter:title"]').content=pageTitle;
+  document.querySelector('meta[name="twitter:description"]').content=pageDescription;
   document.querySelector('link[rel="canonical"]').href="https://hormozsane.github.io/about.html?lang="+lang;
+  const profileSchema=JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent);
+  profileSchema.inLanguage=lang;
+  document.querySelector('script[type="application/ld+json"]').textContent=JSON.stringify(profileSchema);
   const translated=originalAbout();
   document.getElementById('profile').innerHTML=`<div class="aboutControls"><a href="index.html?lang=${lang}">${lang==="en"?"← Home":"← صفحهٔ اصلی"}</a><button type="button" onclick="setLang('fa')">فارسی</button><button type="button" onclick="setLang('en')">English</button></div>${translated}<footer class="footer">© 2026 Hormoz Sane — ${lang==="en"?"All Rights Reserved":"کلیه حقوق محفوظ است"}</footer>`;
 }
