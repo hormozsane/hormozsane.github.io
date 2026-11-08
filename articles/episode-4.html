@@ -1,12 +1,82 @@
 
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>کیفیت صدای سه‌تار — HORMOZ SANE</title>
-<meta name="description" content="یادداشتی از هرمز صانع دربارهٔ کیفیت صدای سه‌تار، رنگ صوتی، ویژگی‌های ساز و تجربهٔ نوازندگی.">
+
+<title>The Sound Quality of the Setar — HORMOZ SANE</title>
+<meta name="description" content="A reflection by Hormoz Sane on the sound quality of the setar, its tonal color, acoustic characteristics, and the experience of playing the instrument.">
+
 <link rel="canonical" href="https://hormozsane.github.io/articles/episode-4.html">
+<link rel="alternate" hreflang="en" href="https://hormozsane.github.io/articles/episode-4.html?lang=en">
+<link rel="alternate" hreflang="fa" href="https://hormozsane.github.io/articles/episode-4.html?lang=fa">
+<link rel="alternate" hreflang="x-default" href="https://hormozsane.github.io/articles/episode-4.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Hormoz Sane">
+<meta property="og:title" content="The Sound Quality of the Setar — Hormoz Sane">
+<meta property="og:description" content="A reflection by Hormoz Sane on the sound quality of the setar, its tonal color, acoustic characteristics, and the experience of playing the instrument.">
+<meta property="og:url" content="https://hormozsane.github.io/articles/episode-4.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fa_IR">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Sound Quality of the Setar — Hormoz Sane">
+<meta name="twitter:description" content="A reflection by Hormoz Sane on the sound quality of the setar, its tonal color, acoustic characteristics, and the experience of playing the instrument.">
+
+<script type="application/ld+json" id="articleSchema">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "https://hormozsane.github.io/articles/episode-4.html#article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hormozsane.github.io/articles/episode-4.html"
+  },
+  "headline": "The Sound Quality of the Setar",
+  "description": "A reflection by Hormoz Sane on the sound quality of the setar, its tonal color, acoustic characteristics, and the experience of playing the instrument.",
+  "inLanguage": "en",
+  "author": {
+    "@id": "https://hormozsane.github.io/#person",
+    "@type": "Person",
+    "name": "Hormoz Sane",
+    "alternateName": "هرمز صانع"
+  },
+  "publisher": {
+    "@id": "https://hormozsane.github.io/#person"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Setar"
+    },
+    {
+      "@type": "Thing",
+      "name": "Iranian classical music"
+    },
+    {
+      "@type": "Thing",
+      "name": "Musical acoustics"
+    },
+    {
+      "@type": "Thing",
+      "name": "Musical instruments"
+    }
+  ],
+  "keywords": [
+    "Hormoz Sane",
+    "هرمز صانع",
+    "Setar",
+    "سه‌تار",
+    "Setar sound quality",
+    "Iranian classical music",
+    "Musical acoustics",
+    "Setar performance"
+  ]
+}
+</script>
+
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#173b32;color:#f3ead7;font-family:Tahoma,Arial,sans-serif}
@@ -34,7 +104,7 @@ footer{text-align:center;padding:18px;font:13px Georgia,serif;color:#eadcc3;bord
 </header>
 
 <main>
-<h1 id="title">کیفیت صدای سه‌تار</h1>
+<h1 id="title">The Sound Quality of the Setar</h1>
 <div class="mark"></div>
 <div id="article">
 <article class="articleBody" lang="fa" dir="rtl">
@@ -85,10 +155,10 @@ footer{text-align:center;padding:18px;font:13px Georgia,serif;color:#eadcc3;bord
 </article>
 </div>
 
-<a class="back" id="back" href="../index.html?lang=fa#articles">بازگشت به یادداشت‌های صانع</a>
+<a class="back" id="back" href="../index.html?lang=en#articles">Back to Sane’s Articles</a>
 </main>
 
-<footer id="footer">© 2026 Hormoz Sane — کلیه حقوق محفوظ است</footer>
+<footer id="footer">© 2026 Hormoz Sane — All Rights Reserved</footer>
 
 <script>
 const fa = document.getElementById('article').innerHTML;
@@ -140,32 +210,114 @@ const en = `<article class="articleBody" lang="en" dir="ltr">
 <p><strong>Hormoz Sane</strong></p>
 </article>`;
 
+const descriptions = {
+  en: 'A reflection by Hormoz Sane on the sound quality of the setar, its tonal color, acoustic characteristics, and the experience of playing the instrument.',
+  fa: 'یادداشتی از هرمز صانع دربارهٔ کیفیت صدای سه‌تار، رنگ صوتی، ویژگی‌های ساز و تجربهٔ نوازندگی.'
+};
+
 function setLang(language){
   const isEn = language === 'en';
+  const lang = isEn ? 'en' : 'fa';
   const title = isEn
     ? 'The Sound Quality of the Setar'
     : 'کیفیت صدای سه‌تار';
 
-  document.documentElement.lang = isEn ? 'en' : 'fa';
+  document.documentElement.lang = lang;
   document.documentElement.dir = isEn ? 'ltr' : 'rtl';
+
   document.getElementById('title').textContent = title;
   document.getElementById('article').innerHTML = isEn ? en : fa;
+
   document.getElementById('back').textContent = isEn
     ? 'Back to Sane’s Articles'
     : 'بازگشت به یادداشت‌های صانع';
+
   document.getElementById('back').href = isEn
     ? '../index.html?lang=en#articles'
     : '../index.html?lang=fa#articles';
+
   document.getElementById('footer').textContent = isEn
     ? '© 2026 Hormoz Sane — All Rights Reserved'
     : '© 2026 Hormoz Sane — کلیه حقوق محفوظ است';
+
   document.title = title + ' — HORMOZ SANE';
+
+  document.querySelector('meta[name="description"]')
+    .setAttribute('content', descriptions[lang]);
+
+  document.querySelector('meta[property="og:title"]')
+    .setAttribute('content', title + ' — Hormoz Sane');
+
+  document.querySelector('meta[property="og:description"]')
+    .setAttribute('content', descriptions[lang]);
+
+  document.querySelector('meta[property="og:locale"]')
+    .setAttribute('content', isEn ? 'en_US' : 'fa_IR');
+
+  document.querySelector('meta[name="twitter:title"]')
+    .setAttribute('content', title + ' — Hormoz Sane');
+
+  document.querySelector('meta[name="twitter:description"]')
+    .setAttribute('content', descriptions[lang]);
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://hormozsane.github.io/articles/episode-4.html#article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hormozsane.github.io/articles/episode-4.html"
+    },
+    "headline": title,
+    "description": descriptions[lang],
+    "inLanguage": lang,
+    "author": {
+      "@id": "https://hormozsane.github.io/#person",
+      "@type": "Person",
+      "name": "Hormoz Sane",
+      "alternateName": "هرمز صانع"
+    },
+    "publisher": {
+      "@id": "https://hormozsane.github.io/#person"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": isEn ? "Setar" : "سه‌تار"
+      },
+      {
+        "@type": "Thing",
+        "name": isEn ? "Iranian classical music" : "موسیقی کلاسیک ایرانی"
+      },
+      {
+        "@type": "Thing",
+        "name": isEn ? "Musical acoustics" : "فیزیک و کیفیت صوتی ساز"
+      },
+      {
+        "@type": "Thing",
+        "name": isEn ? "Musical instruments" : "سازهای موسیقی"
+      }
+    ],
+    "keywords": [
+      "Hormoz Sane",
+      "هرمز صانع",
+      "Setar",
+      "سه‌تار",
+      "Setar sound quality",
+      "Iranian classical music",
+      "Musical acoustics",
+      "Setar performance"
+    ]
+  };
+
+  document.getElementById('articleSchema').textContent =
+    JSON.stringify(schema);
 }
 
 const initialLang =
-  new URLSearchParams(location.search).get('lang') === 'en'
-    ? 'en'
-    : 'fa';
+  new URLSearchParams(location.search).get('lang') === 'fa'
+    ? 'fa'
+    : 'en';
 
 setLang(initialLang);
 </script>
